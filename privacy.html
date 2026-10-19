@@ -23,24 +23,31 @@
 <body>
   <div class="card">
     <h1>Confidentialité 🔒</h1>
-    <p class="date">Pilou — mise à jour le 18 octobre 2026</p>
+    <p class="date">Pilou — mise à jour le 19 octobre 2026</p>
 
     <h2>En bref</h2>
-    <p>Tout ce que tu saisis dans Pilou (pilule, prises, médicaments, réglages) reste sur ton iPhone et n'est jamais envoyé à qui que ce soit. Il n'y a pas de compte. La version gratuite affiche des publicités fournies par Google AdMob ; un achat unique permet de les retirer.</p>
+    <p>Tout ce que tu saisis dans Pilou (pilule, prises, médicaments, journal, réglages) reste sur ton iPhone et n'est jamais envoyé à qui que ce soit. Il n'y a pas de compte. La version gratuite affiche des publicités fournies par Google AdMob ; un achat unique permet de les retirer.</p>
 
     <h2>Données enregistrées sur ton iPhone</h2>
     <ul>
       <li>Tes réglages (nom de la pilule, type de plaquette, heure du rappel, thème…).</li>
       <li>L'historique des prises et la liste de tes médicaments.</li>
+      <li>Ton journal : humeur, petits symptômes et notes que tu choisis d'écrire pour un jour.</li>
+      <li>Tes badges, l'accessoire et les compagnons choisis pour ton Pilou.</li>
     </ul>
     <p>Ces données sont stockées uniquement sur ton appareil. Elles ne sont jamais envoyées à un serveur et ne sont partagées avec personne.</p>
     <p>Pour que tu ne perdes rien si tu supprimes puis réinstalles Pilou, une copie chiffrée de ces données est aussi gardée dans le trousseau (Keychain) de ton iPhone. iOS conserve le trousseau même après la suppression de l'app ; il est protégé par le chiffrement de ton appareil et seul Pilou peut le lire. Il suit ton iPhone si tu le restaures depuis une sauvegarde iCloud ou une sauvegarde chiffrée. Pour tout effacer, y compris cette copie, utilise « Tout réinitialiser » dans Réglages avant de supprimer l'app.</p>
+
+    <h2>Widgets</h2>
+    <p>Si tu ajoutes un widget Pilou sur ton écran d'accueil ou ton écran verrouillé, l'app lui transmet, sur ton iPhone uniquement, ce qu'il doit afficher (pilule du jour prise ou non, heure du rappel, jour de la plaquette, couleurs du thème). Ces informations sont rangées dans un espace partagé entre Pilou et son widget, sur ton appareil ; elles ne sont envoyées nulle part. En mode discrétion, le widget n'affiche pas le mot « pilule ». Attention : un widget sur l'écran verrouillé peut être vu par les personnes qui regardent ton téléphone.</p>
 
     <h2>Sauvegarde (facultative)</h2>
     <p>Si tu l'actives, Pilou écrit un fichier de sauvegarde dans le dossier que tu choisis dans l'app Fichiers (sur l'iPhone ou dans ton iCloud Drive). Ce fichier reste sous ton contrôle ; Pilou n'y a accès que dans le dossier que tu as choisi.</p>
 
     <h2>Notifications</h2>
     <p>Les rappels sont des notifications locales programmées sur ton iPhone. Elles ne passent par aucun serveur.</p>
+    <p>Si ton iPhone était éteint à l'heure d'un rappel, iOS ne l'affiche pas après coup. Pour compenser, Pilou utilise l'actualisation en arrière-plan d'iOS : de temps en temps, iOS réveille l'app quelques secondes, et elle t'envoie les rappels des dernières heures qui n'ont jamais été affichés. Tout se passe sur ton iPhone, sans connexion à un serveur. Tu peux désactiver cette fonction dans Réglages iOS → Général → Actualisation en arrière-plan.</p>
+    <p>Si tu utilises les raccourcis Siri de Pilou (« J'ai pris ma pilule », « Ai-je pris ma pilule ? »), la commande est traitée par Siri selon la politique de confidentialité d'Apple ; Pilou ne reçoit que l'action à effectuer.</p>
 
     <h2>Publicités</h2>
     <p>Dans la version gratuite, Pilou affiche des publicités via Google AdMob. Pour fonctionner, le SDK de Google peut traiter des informations techniques sur ton appareil (modèle, système, adresse IP approximative, interactions avec les pubs). Aucune donnée de santé ni aucune information saisie dans Pilou ne lui est transmise.</p>
@@ -53,11 +60,14 @@
     <p>L'essai gratuit sans pub est géré uniquement sur ton iPhone : pour qu'il ne serve qu'une fois, Pilou garde sa date de fin dans le trousseau de ton appareil.</p>
     <p>Pour qu'un code cadeau ne puisse être utilisé qu'une seule fois, Pilou le vérifie auprès de son petit serveur (hébergé par Cloudflare) quand tu le saisis. Seuls sont envoyés : le code saisi et un identifiant aléatoire créé par Pilou pour ton iPhone (il ne contient rien sur toi ni sur ton appareil). Le serveur conserve uniquement une empreinte du code, la date d'utilisation et cet identifiant aléatoire, pour savoir que le code a déjà servi. Aucune donnée de santé, aucun nom ni aucune adresse e-mail n'est envoyé, et ces informations ne sont ni vendues ni partagées. Comme tout serveur web, Cloudflare traite techniquement l'adresse IP de la connexion pour faire fonctionner le service. Sur ton iPhone, Pilou garde aussi dans le trousseau la date de fin de ta période sans pub et une empreinte des codes déjà utilisés.</p>
 
+    <h2>Invitations</h2>
+    <p>Quand tu ouvres la partie « Inviter mes amies », Pilou demande à son serveur un code d'invitation lié à l'identifiant aléatoire de ton iPhone. Quand une amie saisit ton code, le serveur enregistre que ce code a été utilisé par son identifiant aléatoire, pour vous offrir à toutes les deux des jours sans pub ; Pilou vérifie ce compteur à l'ouverture de l'app. Le serveur ne connaît ni ton nom, ni ton numéro, ni tes contacts : seuls des identifiants aléatoires, des codes et des dates y sont gardés. Quand tu partages ton code, c'est toi qui choisis l'app et la personne à qui l'envoyer.</p>
+
     <h2>Avis sur l'App Store</h2>
     <p>De temps en temps, Pilou peut te proposer de noter l'app grâce à la fenêtre officielle d'Apple. C'est Apple qui gère cette fenêtre : Pilou ne sait pas si tu as laissé un avis ni quelle note tu as donnée, et rien n'est offert en échange.</p>
 
     <h2>Santé</h2>
-    <p>Pilou est un simple outil de rappel. Il ne remplace pas l'avis d'un médecin ou d'un pharmacien. En cas d'oubli ou de doute, suis la notice de ta pilule et demande conseil à un professionnel de santé.</p>
+    <p>Pilou est un simple outil de rappel. Il ne remplace pas l'avis d'un médecin ou d'un pharmacien. L'aide « Pilule oubliée » donne des conseils généraux tirés de la plupart des notices ; ta notice et ton pharmacien ont toujours le dernier mot. En cas d'oubli ou de doute, demande conseil à un professionnel de santé.</p>
 
     <h2>Enfants</h2>
     <p>Pilou n'est pas destiné aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant.</p>
